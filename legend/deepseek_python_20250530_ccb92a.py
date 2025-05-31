@@ -71,7 +71,7 @@ class Player(GameSprite):
     def update_r(self):  # Управление правой ракеткой
         keys = key.get_pressed()  # Получение состояния клавиш
         if keys[K_UP] and self.rect.y > 5:  # Движение вверх
-            self.rect.y -= self.speed
+            self.rect.y -= self.speed 
         if keys[K_DOWN] and self.rect.y < win_height - 80:  # Движение вниз
             self.rect.y += self.speed
     def update_l(self):  # Управление левой ракеткой
